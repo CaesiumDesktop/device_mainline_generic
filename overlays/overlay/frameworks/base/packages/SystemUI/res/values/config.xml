@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2026 The AnyBook Authors
+  SPDX-License-Identifier: Apache-2.0
+
+  SystemUI (and WM Shell, whose resources are built into SystemUI) config for an Android desktop device,
+  taken from the SystemUI vendor RRO in Google's AOSP Desktop (Preview) emulator image. Left out:
+  config_disableSplitShade (not in AOSP SystemUI) and hsu_allow_list_qs_tiles (HSUM only; we don't use HSUM).
+  Defaults: frameworks/base/packages/SystemUI/res/values/config.xml and
+  frameworks/base/libs/WindowManager/Shell/res/values/config.xml.
+-->
+<resources>
+    <bool name="config_useDesktopStatusBar">true</bool>
+    <bool name="config_notificationShadeOnTopEnd">true</bool>
+    <bool name="config_statusBarTapToExpandShade">true</bool>
+    <bool name="config_enableDesktopAudioTileDetailsView">true</bool>
+    <bool name="config_enableHideNotificationsShadeOnAllAppsKey">true</bool>
+    <bool name="config_enableInputRouting">true</bool>
+    <bool name="config_enableSignOutButtonOnKeyguardStatusBar">true</bool>
+    <bool name="config_improveLargeScreenInteractionOnLockscreen">true</bool>
+    <bool name="config_isDesktopForFalsingPurposes">true</bool>
+    <bool name="config_largeScreenPrivacyIndicator">true</bool>
+    <bool name="config_testDesktopScreenSize">true</bool>
+    <bool name="config_useBrightnessMirrorInOverlay">false</bool>
+    <!-- Whether the communal service should be enabled -->
+    <bool name="config_communalServiceEnabled">true</bool>
+
+    <!-- Whether or not to show the UMO on the glanceable hub when media is playing. -->
+    <bool name="config_showUmoOnHub">true</bool>
+
+    <!-- Configuration to swipe to open glanceable hub -->
+    <bool name="config_swipeToOpenGlanceableHub">true</bool>
+</resources>
